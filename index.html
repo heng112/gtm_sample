@@ -32,5 +32,21 @@
     <h1>入込客数調査（観光施設）_観光施設の中小分類別の観光客数 - 観光施設の中/小分類別の観光客数</h1>
     <iframe title="03_入込客数調査（観光施設）_観光施設の中小分類別の観光客数 - 観光施設の中/小分類別の観光客数(2010年～2013年)" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOTY5YzhiZDQtZDI5ZC00YTE4LWIwZWUtYTJmOTBjODliZWM0IiwidCI6ImNlNjBkZGUzLWFmNmItNGRhNy05MjEzLWFjYWMzNzhlYThjNyIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="true"></iframe>
 </body>
+ 
+ <script>
+    
+    
+    // console.log(document.getElementsByTagName("iframe")[0].contentWindow.document)
+
+    window.onload = function() {
+	try {
+		var doc = document.getElementsByTagName("iframe")[0].contentWindow.document;
+	} catch(e) {
+		console.log(e);
+	}
+	console.log(doc.body.innerHTML);
+}
+
+</script>
 </html>
 
